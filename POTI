@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POTI - Guia de Carreira em TI para Iniciantes</title>
+   <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+
+    <!-- TOPO DO SITE -->
+    <header>
+        <h1><img src="logo_poti.png" alt="Logo do POTI"></h1>
+        <p>Projeto de Orientação em Tecnologia da Informação</p>
+        <p><small>Desenvolvido por alunos do 2º Semestre de ADS para ajudar você a achar seu caminho!</small></p>
+    </header>
+
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav>
+        <a href="#sobre">Sobre o POTI</a>
+        <a href="#areas">Áreas de Atuação</a>
+        <a href="#dicas">Dicas de Estudo</a>
+    </nav>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="container">
+
+        <!-- SEÇÃO: SOBRE O PROJETO -->
+        <section id="sobre">
+            <h2>Sobre o POTI</h2>
+            <p>Sabemos que começar na faculdade de tecnologia pode ser assustador e cheio de dúvidas. O objetivo do <strong>POTI</strong> é listar as principais áreas do mercado atual para te ajudar a escolher qual rumo seguir na sua carreira profissional.</p>
+        </section>
+
+        <hr> <!-- Linha divisória simples -->
+
+        <!-- SEÇÃO: ÁREAS DE ATUAÇÃO -->
+        <section id="areas">
+            <h2>Principais Áreas de Tecnologia no Mercado</h2>
+            <p>Clique ou leia sobre cada área para entender o que eles fazem no dia a dia:</p>
+
+            <!-- Área 1: Desenvolvimento Web / Software -->
+            <div class="card-area">
+                <h3>1. Desenvolvimento de Software (Dev Front-End / Back-End / Full-Stack)</h3>
+                <p><strong>O que faz:</strong> Cria sites, sistemas e aplicativos que usamos no dia a dia.</p>
+                <p><strong>O que você precisa estudar:</strong> HTML, CSS, JavaScript, Python, Java ou C#.</p>
+            </div>
+
+            <!-- Área 2: Dados -->
+            <div class="card-area">
+                <h3>2. Ciência e Análise de Dados (Data Science / BI)</h3>
+                <p><strong>O que faz:</strong> Coleta e analisa grandes volumes de informações para ajudar empresas a tomarem decisões inteligentes.</p>
+                <p><strong>O que você precisa estudar:</strong> SQL, Python (bibliotecas como Pandas), Excel Avançado e Power BI.</p>
+            </div>
+
+            <!-- Área 3: Infraestrutura e Nuvem -->
+            <div class="card-area">
+                <h3>3. Computação em Nuvem e DevOps (Cloud)</h3>
+                <p><strong>O que faz:</strong> Cuida dos servidores na internet para que os sistemas nunca caiam e fiquem seguros (ex: AWS, Azure, Google Cloud).</p>
+                <p><strong>O que você precisa estudar:</strong> Redes de computadores, Linux e ferramentas de automação.</p>
+            </div>
+
+            <!-- Área 4: Segurança -->
+            <div class="card-area">
+                <h3>4. Segurança da Informação (Cybersecurity)</h3>
+                <p><strong>O que faz:</strong> Protege os sistemas de ataques de hackers e invasões, garantindo a privacidade dos dados.</p>
+                <p><strong>O que você precisa estudar:</strong> Criptografia, Segurança de Redes e Sistemas Operacionais.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- SEÇÃO: DICAS PARA INICIANTES -->
+        <section id="dicas">
+            <h2>Dicas para quem está no 1º e 2º Semestre</h2>
+            <ul>
+                <li>Não tente aprender todas as linguagens de programação de uma vez só.</li>
+                <li>Foque primeiro em aprender muito bem a <strong>Lógica de Programação</strong>.</li>
+                <li>Participe de comunidades de tecnologia, eventos e faça Networking com outros alunos.</li>
+                <li>Monte um perfil no GitHub para guardar os códigos que você faz na faculdade.</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <!-- RODAPÉ DO SITE -->
+    <footer>
+        <p>&copy; 2026 - POTI - Desenvolvido com ódio por alunos de ADS da Anhanguera</p>
+    </footer>
+
+</body>
+</html>
