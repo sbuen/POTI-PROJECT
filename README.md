@@ -11,7 +11,7 @@ git push - envia as aleterações para seu github
 
 git pull - recebe as alteracoes do github
 
-
+```mermaid
 ---
 title: Animal example
 ---
@@ -38,3 +38,5 @@ classDiagram
         +bool is_wild
         +run()
     }
+
+```
