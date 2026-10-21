@@ -47,7 +47,7 @@ body::before {
     pointer-events: none;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h4 {
     line-height: 1.25;
     font-weight: 600;
     margin-top: 0;
@@ -147,13 +147,7 @@ nav a.active {
     padding: 40px 0;
 }
 
-/* Use .grid para organizar vários cards lado a lado (opcional) */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
-}
-
+/* ---------- Cards das áreas ---------- */
 .card-area {
     background: rgba(28, 28, 33, 0.9);
     border: 1px solid var(--border);
@@ -180,6 +174,94 @@ nav a.active {
     height: auto;
     border-radius: 4px;
     margin-bottom: 16px;
+}
+
+/* ---------- Acordeão (<details> / <summary>) ---------- */
+.card-area summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    cursor: pointer;
+    list-style: none;          /* remove a setinha padrão */
+}
+
+.card-area summary::-webkit-details-marker {
+    display: none;             /* remove a setinha no Safari/Chrome antigo */
+}
+
+.card-area summary h3 {
+    margin: 0;
+}
+
+/* Ícone + / − à direita */
+.card-area summary::after {
+    content: "+";
+    font-size: 1.6rem;
+    line-height: 1;
+    color: var(--accent);
+}
+
+.card-area[open] summary::after {
+    content: "−";
+}
+
+.card-area[open] summary {
+    margin-bottom: 16px;
+}
+
+/* ---------- Título personalizado ---------- */
+.card-area summary h3 {
+    font-size: 2.0rem;
+    letter-spacing: -0.2px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 12px;
+}
+
+.card-area summary h3 small {
+    flex-basis: 100%;
+    margin-left: 54px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--cor, var(--accent));
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ---------- Fundo e cor de cada área ---------- */
+.card-area.area-dev {
+    --cor: #13aff0;
+    background: linear-gradient(135deg, rgba(19, 175, 240, 0.22), rgba(28, 28, 33, 0.92) 60%);
+}
+
+.card-area.area-dados {
+    --cor: #a78bfa;
+    background: linear-gradient(135deg, rgba(167, 139, 250, 0.22), rgba(28, 28, 33, 0.92) 60%);
+}
+
+.card-area.area-cloud {
+    --cor: #34d399;
+    background: linear-gradient(135deg, rgba(52, 211, 153, 0.20), rgba(28, 28, 33, 0.92) 60%);
+}
+
+.card-area.area-seguranca {
+    --cor: #f90328;
+    background: linear-gradient(135deg, rgba(246, 4, 40, 0.226), rgba(28, 28, 33, 0.815) 60%);
+}
+
+/* Borda lateral, hover e ícone + / − usam a cor de cada área */
+.card-area[class*="area-"] {
+    border-left: 4px solid var(--cor);
+}
+
+.card-area[class*="area-"]:hover {
+    border-color: var(--cor);
+}
+
+.card-area[class*="area-"] summary::after {
+    color: var(--cor);
 }
 
 /* ---------- Botões / links de ação (opcional) ---------- */
@@ -223,6 +305,10 @@ footer {
 
     header {
         padding: 20px 16px 24px;
+    }
+
+    .card-area summary h3 small {
+        margin-left: 0;
     }
 }
 
