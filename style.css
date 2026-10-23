@@ -147,10 +147,23 @@ nav a.active {
 }
 
 #sobre h2 {
-  text-align: center;  /* título continua centralizado */
+  text-align: left;  /* título continua centralizado */
+  font-size: 2.4rem;   /* tamanho aumentado */
 }
 
 #sobre p {
+  text-align: justify; /* parágrafos justificados */
+  font-size: 1.4rem;   /* tamanho aumentado */
+  line-height: 1.8;    /* espaçamento entre linhas, melhora a leitura */
+  margin-bottom: 1.5rem;
+  max-width: 1200px;     /* largura máxima para melhor legibilidade */
+}
+#areas h2 {
+  text-align: left;  /* título continua centralizado */
+  font-size: 2.4rem;   /* tamanho aumentado */
+  margin-bottom: 1.5rem;
+}
+#areas p{
   text-align: justify; /* parágrafos justificados */
   font-size: 1.4rem;   /* tamanho aumentado */
   line-height: 1.8;    /* espaçamento entre linhas, melhora a leitura */
@@ -162,12 +175,6 @@ nav a.active {
     max-width: 1280px;
     margin: auto;
     padding: 40px 0;
-}
-#areas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    margin-top: 40px;
 }
 
 /* ---------- Cards das áreas ---------- */
