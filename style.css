@@ -139,7 +139,7 @@ nav a.active {
     border-bottom-color: var(--accent);
 }
 
-/* ---------- Conteúdo ---------- */
+/* ---------- Conteúdo e Personalizaçãodo body ---------- */
 #sobre {
    max-width: 1200px;     /* largura máxima para melhor legibilidade */
 
@@ -153,7 +153,7 @@ nav a.active {
 
 #sobre p {
   text-align: justify; /* parágrafos justificados */
-  font-size: 1.4rem;   /* tamanho aumentado */
+  font-size: 1.2rem;   /* tamanho aumentado */
   line-height: 1.8;    /* espaçamento entre linhas, melhora a leitura */
   margin-bottom: 1.5rem;
   max-width: 1200px;     /* largura máxima para melhor legibilidade */
@@ -165,7 +165,7 @@ nav a.active {
 }
 #areas p{
   text-align: justify; /* parágrafos justificados */
-  font-size: 1.4rem;   /* tamanho aumentado */
+  font-size: 1.2rem;   /* tamanho aumentado */
   line-height: 1.8;    /* espaçamento entre linhas, melhora a leitura */
   margin-bottom: 1.5rem;
   max-width: 1200px;     /* largura máxima para melhor legibilidade */
@@ -175,6 +175,13 @@ nav a.active {
     max-width: 1280px;
     margin: auto;
     padding: 40px 0;
+}
+#dicas p{
+  text-align: justify; /* parágrafos justificados */
+  font-size: 1.2rem;   /* tamanho aumentado */
+  line-height: 1.8;    /* espaçamento entre linhas, melhora a leitura */
+  margin-bottom: 1.5rem;
+  max-width: 1200px;     /* largura máxima para melhor legibilidade */
 }
 
 /* ---------- Cards das áreas ---------- */
