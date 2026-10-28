@@ -12,7 +12,11 @@
     --border: #2e2e35;
     --text: #ffffff;
     --text-muted: #ffffff;
-    --accent: #13aff0;
+    --accent: #f8fafb;
+    --accent-dev_soft: #69c6ee;
+    --accent-dados_soft: #a78bfa;
+    --accent-cloud_soft: #34d399;
+    --accent-seguranca_soft: #f90328;
     --accent-hover: #4cc4f6;
     --radius: 6px;
 }
@@ -41,7 +45,7 @@ body::before {
     position: fixed;
     inset: 0;
     z-index: -1;
-    background: url("back_poti.jpg") center / cover no-repeat;
+    background: url("imagens projeto/back_poti.jpg") center / cover no-repeat;
     opacity: 0.06;
     mix-blend-mode: lighten; /* faz o fundo escuro da imagem sumir */
     pointer-events: none;
@@ -140,6 +144,12 @@ nav a.active {
 }
 
 /* ---------- Conteúdo e Personalizaçãodo body ---------- */
+.container {
+    width: min(1200px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 32px 0;
+}
+
 #sobre {
    max-width: 1200px;     /* largura máxima para melhor legibilidade */
 
@@ -170,11 +180,21 @@ nav a.active {
   margin-bottom: 1.5rem;
   max-width: 1200px;     /* largura máxima para melhor legibilidade */
 }
-.container {
-    width: 90%;
-    max-width: 1280px;
-    margin: auto;
-    padding: 40px 0;
+#areas .card-area.area-dev strong{
+    font-size: 1.3rem; /* aumenta o tamanho do texto em negrito */
+    color: var(--accent-dev_soft); /* destaque para palavras importantes */
+}
+#areas .card-area.area-dados strong{
+    font-size: 1.3rem; /* aumenta o tamanho do texto em negrito */
+    color: var(--accent-dados_soft); /* destaque para palavras importantes */
+}
+#areas .card-area.area-cloud strong{
+    font-size: 1.3rem; /* aumenta o tamanho do texto em negrito */
+    color: var(--accent-cloud_soft); /* destaque para palavras importantes */
+}
+#areas .card-area.area-seguranca strong{
+    font-size: 1.3rem; /* aumenta o tamanho do texto em negrito */
+    color: var(--accent-seguranca_soft); /* destaque para palavras importantes */
 }
 #dicas h2 {
   text-align: left;  /* título continua centralizado */
@@ -190,6 +210,12 @@ nav a.active {
 }
 
 /* ---------- Cards das áreas ---------- */
+.area-dev .icone-linguagem {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
 .card-area {
     background: rgba(28, 28, 33, 0.9);
     border: 1px solid var(--border);
@@ -336,13 +362,13 @@ footer {
 /* ---------- Responsivo ---------- */
 @media (max-width: 600px) {
     .container {
-        width: 94%;
+        width: calc(100% - 32px);
         padding: 24px 0;
     }
 
     nav a {
         padding: 12px 10px;
-        font-size: 0.85rem;
+        font-size: 0.85rem;     
     }
 
     header {
