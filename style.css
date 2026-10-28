@@ -148,7 +148,7 @@ nav a.active {
 
 #sobre h2 {
   text-align: left;  /* título continua centralizado */
-  font-size: 2.4rem;   /* tamanho aumentado */
+  font-size: 2.0rem;   /* tamanho aumentado */
 }
 
 #sobre p {
@@ -160,7 +160,7 @@ nav a.active {
 }
 #areas h2 {
   text-align: left;  /* título continua centralizado */
-  font-size: 2.4rem;   /* tamanho aumentado */
+  font-size: 2.0rem;   /* tamanho aumentado */
   margin-bottom: 1.5rem;
 }
 #areas p{
@@ -175,6 +175,11 @@ nav a.active {
     max-width: 1280px;
     margin: auto;
     padding: 40px 0;
+}
+#dicas h2 {
+  text-align: left;  /* título continua centralizado */
+  font-size: 2.0rem;   /* tamanho aumentado */
+  margin-bottom: 1.5rem;
 }
 #dicas p{
   text-align: justify; /* parágrafos justificados */
