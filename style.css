@@ -210,7 +210,25 @@ nav a.active {
 }
 
 /* ---------- Cards das áreas ---------- */
-.area-dev .icone-linguagem {
+.card-area.area-dev .icone-linguagem {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+.card-area.area-dados .icone-linguagem {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+.card-area.area-cloud .icone-linguagem {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+.card-area.area-seguranca .icone-linguagem {    
     display: inline-block;
     width: 40px;
     height: 40px;
